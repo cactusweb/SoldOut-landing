@@ -8,14 +8,14 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 150px;
 
   @media ${props => props.theme.media.tablet} {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   @media ${props => props.theme.media.phone} {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 `
 

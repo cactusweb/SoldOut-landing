@@ -30,12 +30,12 @@ const Background: FC<Props> = ({ moveEvent, ...props }) => {
         data-speed="0.5"
         width="96px"
         height="142px"
-        top="30vh"
+        top="25vh"
         right="30vw"
       />,
       <Star
         key={1}
-        data-speed="1.0"
+        data-speed="-0.5"
         width="48px"
         height="67px"
         top="50vh"
@@ -43,7 +43,7 @@ const Background: FC<Props> = ({ moveEvent, ...props }) => {
       />,
       <Star
         key={2}
-        data-speed="1.5"
+        data-speed="-1.5"
         width="56px"
         height="83px"
         top="80vh"
@@ -51,15 +51,15 @@ const Background: FC<Props> = ({ moveEvent, ...props }) => {
       />,
       <Star
         key={3}
-        data-speed="2"
+        data-speed="-1.0"
         width="56px"
         height="83px"
-        top="90vh"
-        right="15vw"
+        top="85vh"
+        right="20vw"
       />,
       <Star
         key={4}
-        data-speed="2.5"
+        data-speed="1.5"
         width="85px"
         height="126px"
         top="85vh"
@@ -67,11 +67,11 @@ const Background: FC<Props> = ({ moveEvent, ...props }) => {
       />,
       <Star
         key={5}
-        data-speed="3"
-        width="72px"
-        height="92px"
+        data-speed="-3"
+        width="56px"
+        height="83px"
         top="75vh"
-        left="35vw"
+        left="25vw"
       />,
       <Star
         key={6}
@@ -79,15 +79,15 @@ const Background: FC<Props> = ({ moveEvent, ...props }) => {
         width="56px"
         height="83px"
         top="55vh"
-        left="20vw"
+        left="15vw"
       />,
       <Star
         key={7}
-        data-speed="3"
+        data-speed="-3"
         width="56px"
-        height="72px"
-        top="30vh"
-        left="30vw"
+        height="83px"
+        top="15vh"
+        left="25vw"
       />
     ]
   }, [])

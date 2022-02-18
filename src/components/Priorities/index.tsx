@@ -18,14 +18,14 @@ const PrioritiesGrid = styled.div`
   row-gap: 120px;
   margin-top: 60px;
 
-  @media ${props => props.theme.media.tablet} {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr;
     row-gap: 90px;
   }
 
-  @media ${props => props.theme.media.phone} {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    row-gap: 70px;
+    row-gap: 60px;
   }
 `
 
@@ -34,9 +34,6 @@ const PrioritiesContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  @media ${props => props.theme.media.phone} {
-  }
 `
 
 const priorities = [

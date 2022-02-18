@@ -36,6 +36,11 @@ const DashboardButton = styled(Button)`
     top: 20px;
     right: 20px;
   }
+
+  @media ${props => props.theme.media.tablet} {
+    top: 20px;
+    right: 20px;
+  }
 `
 
 const LogoContainer = styled.div`

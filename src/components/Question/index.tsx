@@ -32,7 +32,6 @@ const Title = styled.div<{ isOpen: boolean }>`
   font-size: 18px;
   color: #ebe9ff;
   position: relative;
-  margin-bottom: ${props => props.isOpen && '24px'};
   transition: all 0.4s ease;
   padding-right: 30px;
 
@@ -48,20 +47,19 @@ const Title = styled.div<{ isOpen: boolean }>`
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    transform: ${props => props.isOpen && 'translateY(-50%) rotateX(180deg)'};
-    transition: all 0.4s ease;
+    transform: ${props => props.isOpen && 'rotate(180deg)'};
+    transition: transform 0.4s ease-in-out;
   }
 `
 
 const Answer = styled.div<{ isOpen: boolean }>`
+  overflow: hidden;
+  max-height: ${props => (props.isOpen ? '30px' : '0px')};
   font-weight: 500;
   font-size: 16px;
   color: #ebe9ff;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  max-height: ${props => props.isOpen && '1000px'};
-  opacity: ${props => props.isOpen && '1'};
+  padding-top: ${props => (props.isOpen ? '12px' : '0')};
+  opacity: ${props => (props.isOpen ? '1' : '0')};
   transition: all 0.4s ease;
 
   & > a {

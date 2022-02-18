@@ -27,6 +27,10 @@ const Container = styled.div<{ animation: string | null; justifySelf: string }>`
   opacity: 0;
   animation: ${props => props.animation};
 
+  @media (max-width: 900px) {
+    justify-self: center;
+  }
+
   @media ${props => props.theme.media.tablet} {
     justify-self: center;
   }

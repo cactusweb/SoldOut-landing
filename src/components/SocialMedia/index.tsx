@@ -11,6 +11,10 @@ const Container = styled.div`
 
   & > * {
     margin-right: 35px;
+    fill: ${props => props.theme.colors.secondary};
+    &:hover {
+      fill: ${props => props.theme.colors.action};
+    }
   }
 
   & > :last-child {
@@ -30,13 +34,13 @@ export const SocialMedia: FC = () => {
   return (
     <Container>
       <a href="#rtet" target="_blank">
-        <Discord />
+        <Discord fill="inherit" />
       </a>
       <a href="#tret" target="_blank">
-        <VK />
+        <VK fill="inherit" />
       </a>
       <a href="#erte" target="_blank">
-        <Twitter />
+        <Twitter fill="inherit" />
       </a>
     </Container>
   )
