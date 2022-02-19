@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { PriorityCard } from '../PriorityCard'
+import { PriorityCard } from '../../components/PriorityCard'
 import { ReactComponent as Smile } from '../../assets/smile.svg'
 import { ReactComponent as Monitor } from '../../assets/monitor.svg'
 import { ReactComponent as Punk } from '../../assets/punk.svg'
@@ -7,8 +7,9 @@ import { ReactComponent as Analys } from '../../assets/analys.svg'
 import { ReactComponent as Gears } from '../../assets/gears.svg'
 import { ReactComponent as Lab } from '../../assets/lab.svg'
 import styled from 'styled-components'
-import { Title } from '../Title'
+import { Title } from '../../components/Title'
 import { useInView } from 'react-intersection-observer'
+import Block from '../../components/Block'
 
 const PrioritiesGrid = styled.div`
   width: 100%;
@@ -16,7 +17,6 @@ const PrioritiesGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: space-between;
   row-gap: 120px;
-  margin-top: 60px;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr;
@@ -27,13 +27,6 @@ const PrioritiesGrid = styled.div`
     grid-template-columns: 1fr;
     row-gap: 60px;
   }
-`
-
-const PrioritiesContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 `
 
 const priorities = [
@@ -90,7 +83,7 @@ const priorities = [
 export const Priorities: FC = () => {
   const { ref, inView } = useInView({ triggerOnce: true })
   return (
-    <PrioritiesContainer>
+    <Block>
       <Title>Our priorities</Title>
       <PrioritiesGrid ref={ref}>
         {priorities.map((p, i) => (
@@ -110,6 +103,6 @@ export const Priorities: FC = () => {
           />
         ))}
       </PrioritiesGrid>
-    </PrioritiesContainer>
+    </Block>
   )
 }

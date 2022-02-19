@@ -1,11 +1,11 @@
 import React, { FC, useState } from 'react'
 import styled from 'styled-components'
 import Background from '../Background'
-import { FAQ } from '../FAQ'
-import Header from '../Header'
-import { Priorities } from '../Priorities'
+import { FAQ } from '../../blocks/FAQ'
+import Header from '../../blocks/Header'
+import { Priorities } from '../../blocks/Priorities'
 import { SocialMedia } from '../SocialMedia'
-import { Successes } from '../Successes'
+import { Successes } from '../../blocks/Successes'
 
 const Container = styled.div`
   max-width: 1060px;
@@ -51,7 +51,7 @@ export const App: FC = () => {
       <Header onMouseMove={e => setMoveEvent(e)} />
       <Container>
         <Priorities />
-        {/* <Successes /> */}
+        <Successes />
         <FAQ />
         <SocialMedia />
         <UserAgreement href="#">user agreement</UserAgreement>

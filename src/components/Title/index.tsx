@@ -8,4 +8,13 @@ export const Title = styled.h2`
   text-align: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 120px;
+
+  @media ${props => props.theme.media.tablet} {
+    margin-bottom: 100px;
+  }
+
+  @media ${props => props.theme.media.phone} {
+    margin-bottom: 60px;
+  }
 `

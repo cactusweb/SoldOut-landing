@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 import { ReactComponent as Logo } from '../../assets/logo.svg'
-import { Button } from '../Button'
+import { Button } from '../../components/Button'
 
 const Container = styled.div`
   height: 100vh;
