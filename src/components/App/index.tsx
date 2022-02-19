@@ -6,6 +6,8 @@ import Header from '../../blocks/Header'
 import { Priorities } from '../../blocks/Priorities'
 import { SocialMedia } from '../SocialMedia'
 import { Successes } from '../../blocks/Successes'
+import { Routes, Route, Link, NavLink, Navigate } from 'react-router-dom'
+import { Agreement } from '../Agreement'
 
 const Container = styled.div`
   max-width: 1060px;
@@ -18,7 +20,7 @@ const Container = styled.div`
   }
 `
 
-const UserAgreement = styled.a`
+const UserAgreement = styled(NavLink)`
   display: block;
   font-size: 14px;
   color: white;
@@ -47,15 +49,24 @@ export const App: FC = () => {
     useState<React.MouseEvent<HTMLDivElement> | null>(null)
 
   return (
-    <Background moveEvent={moveEvent}>
-      <Header onMouseMove={e => setMoveEvent(e)} />
-      <Container>
-        <Priorities />
-        <Successes />
-        <FAQ />
-        <SocialMedia />
-        <UserAgreement href="#">user agreement</UserAgreement>
-      </Container>
-    </Background>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Background moveEvent={moveEvent}>
+            <Header onMouseMove={e => setMoveEvent(e)} />
+            <Container>
+              <Priorities />
+              <Successes />
+              <FAQ />
+              <SocialMedia />
+              <UserAgreement to="/user_agreement">user agreement</UserAgreement>
+            </Container>
+          </Background>
+        }
+      />
+      <Route path="/user_agreement" element={<Agreement />} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
   )
 }
