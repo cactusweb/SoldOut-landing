@@ -10,6 +10,8 @@ const Container = styled.div`
   margin-top: 120px;
 
   & > * {
+    cursor: pointer;
+
     margin-right: 35px;
     fill: ${props => props.theme.colors.secondary};
     &:hover {

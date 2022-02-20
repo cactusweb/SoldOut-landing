@@ -1,8 +1,6 @@
-export const getImages = () =>
-  new Promise<string[]>(resolve => {
-    resolve(
-      Array(99)
-        .fill('')
-        .map((_, i) => `https://picsum.photos/id/${i}/300/200`)
-    )
-  })
+import axios from 'axios'
+
+export const getImages = async () => {
+  const { data } = await axios.get('http://localhost:3000/api/successes')
+  return data.data.map((s: { attachment: string }) => s.attachment)
+}

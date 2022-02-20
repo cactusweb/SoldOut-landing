@@ -14,6 +14,7 @@ const Container = styled.div<{ animation: string | null }>`
     margin-bottom: 0;
   }
   opacity: 0;
+  cursor: pointer;
 
   animation: ${props => props.animation};
 

@@ -1,0 +1,80 @@
+h1 {
+  justify-self: center;
+  text-align: center;
+}
+
+.agreement {
+  display: grid;
+  align-self: start;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1560px;
+  box-sizing: border-box;
+  padding: 0 80px;
+  justify-self: center;
+  margin: 0 auto;
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .agreement {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .agreement {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a.pointer {
+  cursor: pointer;
+}
+
+p.important {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+p.point {
+  margin-left: 20px;
+}
+
+p span.name {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: underline;
+  color: #e5e5e5;
+  cursor: text;
+}
+
+.content {
+  display: grid;
+  row-gap: 60px;
+}
+
+.infoBlock {
+  display: grid;
+  row-gap: 20px;
+  justify-items: start;
+}
+
+.infoBlock > .info {
+  display: grid;
+  row-gap: 10px;
+}

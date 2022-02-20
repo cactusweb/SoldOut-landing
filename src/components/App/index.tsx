@@ -6,7 +6,7 @@ import Header from '../../blocks/Header'
 import { Priorities } from '../../blocks/Priorities'
 import { SocialMedia } from '../SocialMedia'
 import { Successes } from '../../blocks/Successes'
-import { Routes, Route, Link, NavLink, Navigate } from 'react-router-dom'
+import { Routes, Route, NavLink, Navigate } from 'react-router-dom'
 import { Agreement } from '../Agreement'
 
 const Container = styled.div`
@@ -28,6 +28,7 @@ const UserAgreement = styled(NavLink)`
   margin-top: 30px;
   padding-bottom: 30px;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
