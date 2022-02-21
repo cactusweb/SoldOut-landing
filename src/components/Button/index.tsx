@@ -1,6 +1,7 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Button = styled.button`
+export const Button = styled.a<{ disabled?: boolean }>`
+  display: block;
   padding: 0px 35px;
   text-transform: uppercase;
   height: 40px;
@@ -16,9 +17,20 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  ${props =>
+    props.disabled &&
+    css`
+      opacity: 0.6;
+      cursor: default;
+    `};
 
-  &:hover {
-    background: #501cd5;
-    border: 1px solid #501cd5;
-  }
+  ${props =>
+    !props.disabled &&
+    css`
+      &:hover {
+        background: #501cd5;
+        border: 1px solid #501cd5;
+      }
+    `}
 `

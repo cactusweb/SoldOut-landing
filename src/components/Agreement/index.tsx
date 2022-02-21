@@ -9,16 +9,16 @@ export const Agreement: FC = () => {
         <h1>Пользовательское соглашение</h1>
         <p className={classes.important}>
           Настоящее Соглашение определяет условия использования посетителем
-          сайта (далее - Пользователь) материалов и сервисов сайта
-          <a href="https://soldout.com" className={classes.pointer}>
-            https://soldout.com
+          сайта (далее - Пользователь) материалов и сервисов сайта{' '}
+          <a href="https://soldoutcook.com" className={classes.pointer}>
+            https://soldoutcook.com
           </a>{' '}
           (далее - Сайт), а также регулирует отношения между ИП с основным
           государственным регистрационным номером{' '}
           <a href="#id">322325600000441</a> (далее SoldOut или Администрация) и
           посетителем сайта. Сайт{' '}
-          <a href="https://soldout.com" className={classes.pointer}>
-            https://soldout.com
+          <a href="https://soldoutcook.com" className={classes.pointer}>
+            https://soldoutcook.com
           </a>{' '}
           не является средством массовой информации.
         </p>
@@ -168,7 +168,7 @@ export const Agreement: FC = () => {
             </p>
             <p>
               5.2. Покупку доступа к частному серверу Discord можно осуществить
-              на сайте https://soldout.com с помощью платежного метода -
+              на сайте https://soldoutcook.com с помощью платежного метода -
               банковская карта. Когда пользователь выберет способ оплаты, виджет
               сообщит, что способ оплаты будет привязан к магазину. При успешной
               оплате данные карты или кошелька автоматически сохранятся в
@@ -306,7 +306,8 @@ export const Agreement: FC = () => {
                 {' '}
                 <span className={classes.name}>Услуга/Товар</span> -
                 предоставление Поставщиком услуги/товара по из ассортимента
-                сайта <a href="https://soldout.com">https://soldout.com</a>
+                сайта{' '}
+                <a href="https://soldoutcook.com">https://soldoutcook.com</a>
               </p>
               <p>
                 {' '}
@@ -383,7 +384,7 @@ export const Agreement: FC = () => {
                 {' '}
                 <span className={classes.name}>Сайт Поставщика</span> - сайт,
                 размещенный в сети Интернет по адресу:{' '}
-                <a href="https://soldout.com">https://soldout.com</a>{' '}
+                <a href="https://soldoutcook.com">https://soldoutcook.com</a>{' '}
               </p>
             </div>
           </div>

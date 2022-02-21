@@ -38,10 +38,14 @@ export const SocialMedia: FC = () => {
       <a href="#rtet" target="_blank">
         <Discord fill="inherit" />
       </a>
-      <a href="#tret" target="_blank">
+      <a href="https://vk.com/soldoutcook" target="_blank" rel="noreferrer">
         <VK fill="inherit" />
       </a>
-      <a href="#erte" target="_blank">
+      <a
+        href="https://twitter.com/Soldoutcook"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Twitter fill="inherit" />
       </a>
     </Container>

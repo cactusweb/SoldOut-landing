@@ -62,8 +62,10 @@ const Header: FC<Props> = ({ onMouseMove }) => {
         <Logo width="100%" height="100%" />
       </LogoContainer>
       <Title>SOLDOUT COOK</Title>
-      <Button>OUT OF STOCK</Button>
-      <DashboardButton>DASHBOARD</DashboardButton>
+      <Button disabled>OUT OF STOCK</Button>
+      <DashboardButton href="https://dash.soldoutcook.com">
+        DASHBOARD
+      </DashboardButton>
     </Container>
   )
 }
