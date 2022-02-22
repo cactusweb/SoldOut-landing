@@ -35,7 +35,7 @@ const Container = styled.div`
 export const SocialMedia: FC = () => {
   return (
     <Container>
-      <a href="#rtet" target="_blank">
+      <a href="https://discord.gg/8RqrFR8Dhy" target="_blank" rel="noreferrer">
         <Discord fill="inherit" />
       </a>
       <a href="https://vk.com/soldoutcook" target="_blank" rel="noreferrer">
