@@ -96,16 +96,18 @@ export const Successes: FC = () => {
   }, [fetchSuccesses])
 
   useEffect(() => {
+    if (!successes.length) return
     setInterval(() => {
       setAnimation(() => false)
-    }, 70000)
-  }, [])
+    }, successes.length * 1000 * 3)
+  }, [successes])
 
   useEffect(() => {
+    if (!successes.length) return
     setInterval(() => {
       setAnimation(() => true)
-    }, 71000)
-  }, [])
+    }, successes.length * 1000 * 3 + 500)
+  }, [successes])
 
   if (!successes.length) {
     return (
