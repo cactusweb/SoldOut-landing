@@ -1,10 +1,56 @@
 import React, { FC } from 'react'
 import classes from './Agreement.module.css'
 import payments from '../../assets/payment.svg'
+import styled from 'styled-components'
+import { Button } from '../Button'
+import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { Link } from 'react-router-dom'
+
+const DashboardButton = styled(Button)`
+  position: absolute;
+  top: 25px;
+  right: 100px;
+
+  @media ${props => props.theme.media.phone} {
+    top: 20px;
+    right: 20px;
+  }
+
+  @media ${props => props.theme.media.tablet} {
+    top: 20px;
+    right: 20px;
+  }
+`
+
+const StyledLogo = styled(Logo)`
+  position: absolute;
+  top: 25px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  @media ${props => props.theme.media.phone} {
+    top: 20px;
+    left: 20px;
+  }
+
+  @media ${props => props.theme.media.tablet} {
+    top: 20px;
+    left: 20px;
+  }
+`
 
 export const Agreement: FC = () => {
   return (
     <div className={classes.wrapper}>
+      <Link to="/">
+        <StyledLogo />
+      </Link>
+
+      <DashboardButton href="https://dash.soldoutcook.com">
+        DASHBOARD
+      </DashboardButton>
       <div className={classes.agreement}>
         <h1>Пользовательское соглашение</h1>
         <p className={classes.important}>
