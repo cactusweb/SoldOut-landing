@@ -1,7 +1,7 @@
 export const faq = [
   {
     title: 'How much does a subscription cost?',
-    answer: 'Subscription costs 2000 rubles'
+    answer: 'Subscription costs 2000₽'
   },
   {
     title: 'What monitors do you have?',
