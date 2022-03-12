@@ -99,14 +99,10 @@ export const Successes: FC = () => {
     if (!successes.length) return
     setInterval(() => {
       setAnimation(() => false)
-    }, successes.length * 1000 * 3)
-  }, [successes])
-
-  useEffect(() => {
-    if (!successes.length) return
+    }, 74000)
     setInterval(() => {
       setAnimation(() => true)
-    }, successes.length * 1000 * 3 + 500)
+    }, 75000)
   }, [successes])
 
   if (!successes.length) {
