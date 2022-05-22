@@ -67,7 +67,7 @@ const priorities = [
     items: [
       'Module for NFT, WAX, NEFTY',
       'Autofill on SNKRS, ADIDAS',
-      'Other soon'
+      'Other tools'
     ]
   },
   {
@@ -84,7 +84,7 @@ export const Priorities: FC = () => {
   const { ref, inView } = useInView({ triggerOnce: true })
   return (
     <Block>
-      <Title>Our priorities</Title>
+      <Title>Our Features</Title>
       <PrioritiesGrid ref={ref}>
         {priorities.map((p, i) => (
           <PriorityCard

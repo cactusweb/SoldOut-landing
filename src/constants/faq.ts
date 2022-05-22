@@ -6,7 +6,7 @@ export const faq = [
   {
     title: 'What monitors do you have?',
     answer:
-      'You can see the list of monitors <a href="https://vk.com/topic-201810061_48367780" target="_blank">here</a>'
+      'You can see the list of monitors <a href="https://soldoutcookguides.notion.site/Monitors-4e840c11594848098fcc37a4f1ae23f3" target="_blank">here</a>'
   },
   {
     title: 'How to get into your group?',
@@ -19,6 +19,6 @@ export const faq = [
   },
   {
     title: 'When will the restocks be?',
-    answer: 'You can follow the notifications in our VK group'
+    answer: 'You can follow the notifications in our VK group and discord info restock server'
   }
 ]
