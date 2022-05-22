@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useMemo } from 'react'
 import styled from 'styled-components'
-import background from '../../assets/background2.svg'
-import background2 from '../../assets/background-2.svg'
+import background from '../../assets/background1.svg'
+import background2 from '../../assets/background2.svg'
 import Star from '../Star'
 
 const StyledBackground = styled.div`
