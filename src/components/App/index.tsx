@@ -58,7 +58,7 @@ export const App: FC = () => {
             <Header onMouseMove={e => setMoveEvent(e)} />
             <Container>
               <Priorities />
-              // <Successes />
+              <Successes />
               <FAQ />
               <SocialMedia />
               <UserAgreement to="/user_agreement">user agreement</UserAgreement>
